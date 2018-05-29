@@ -1,5 +1,5 @@
 # ubuntu / debian kernel
-Build script for my kernel that includes aufs patches, output is an installed kernel.
+Build script for my kernel that includes aufs patches, output is an installed kernel.  The config is based on the current running kernel, so *should* work for most people.
 
 This script will create a local copy of your source dir (so you don't have reverse patches) and then build there ... this will keep your source clean (yes, you can git checkout . etc etc but why?)
 
