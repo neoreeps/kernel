@@ -34,7 +34,8 @@ elif [ "$1" == "build" ]; then
     # create new copy of tree, patch it and build it
     BRANCH=$2
     rm -rf linux build
-    rsync -a --info=progress2 linux.stable/* linux/ 
+    #rsync -a --info=progress2 linux.stable/* linux/ 
+    cp -R linux.stable linux
     cd linux
     
     if [ "x${BRANCH}" == "x" ]; then
