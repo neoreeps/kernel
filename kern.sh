@@ -47,17 +47,17 @@ elif [ "$1" == "build" ]; then
 
     git checkout ${BRANCH}
 
-    dprint "patching from aufs4"
-    patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-kbuild.patch
-    patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-base.patch
-    patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-mmap.patch
-    patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-standalone.patch
+    #dprint "patching from aufs4"
+    #patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-kbuild.patch
+    #patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-base.patch
+    #patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-mmap.patch
+    #patch -p1 --ignore-whitespace -i ../aufs4-standalone/aufs4-standalone.patch
 
-    cp -R ../aufs4-standalone/Documentation .
-    cp -R ../aufs4-standalone/fs .
-    cp -R ../aufs4-standalone/include .
+    #cp -R ../aufs4-standalone/Documentation .
+    #cp -R ../aufs4-standalone/fs .
+    #cp -R ../aufs4-standalone/include .
 
-    dprint "patched kernel source and copied aufs src files"
+    #dprint "patched kernel source and copied aufs src files"
 
 else
     dprint "must provide clone, build, or pull as parameter"
