@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# sudo add-apt-repository ppa:graphics-drivers/ppa 
+
+# sudo apt install kernel-package libncurses5 libncurses5-dev build-essential flex bison
+
 
 dprint() {
     echo "---> ${@}" 2>&1
