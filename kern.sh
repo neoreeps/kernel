@@ -2,7 +2,7 @@
 
 # sudo add-apt-repository ppa:graphics-drivers/ppa 
 
-# sudo apt install kernel-package libncurses5 libncurses5-dev build-essential flex bison
+# sudo apt install kernel-package libncurses5 libncurses5-dev build-essential flex bison libssl-dev
 
 
 dprint() {
