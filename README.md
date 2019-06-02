@@ -5,9 +5,10 @@ This script will create a local copy of your source dir (so you don't have rever
 
 This is my daily script that I use to build in about 30min (Dell Precision 5520 Laptop, i7-7820HQ, 32GB Mem, 1TB NVMe)
 
+
 # Instructions
 
-**Step 1:** Clone AUFS repository as a subdir in this repository
+**Step 1:** (OPTIONAL) Clone AUFS repository as a subdir in this repository
 This script adds AUFS functionality for those of us with docker images on aufs.
 
 ```
@@ -36,10 +37,15 @@ To clone Linus tree:
 
 Filter the list of tags via grep:
 ```
-./kern.sh pull |grep v4.17
+./kern.sh pull |grep v5.1
 ```
 
 **Step 4:** Finally, build and install your kernel
 ```
-./kern.sh build v4.17-rc7
+./kern.sh build v5.1.6
+```
+
+##NOTE: if you want aufs, pass that as the 3rd option but be sure to perform Step2 if you do.
+```
+./kern.sh build v5.1.6 aufs
 ```
