@@ -5,6 +5,10 @@ This script will create a local copy of your source dir (so you don't have rever
 
 This is my daily script that I use to build in about 30min (Dell Precision 5520 Laptop, i7-7820HQ, 32GB Mem, 1TB NVMe)
 
+# Dependencies
+```
+sudo apt install kernel-wedge flex bison libssl-dev
+```
 
 # Instructions
 

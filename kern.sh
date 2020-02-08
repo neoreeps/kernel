@@ -85,6 +85,9 @@ fi
 # disable debug builds
 sed -i 's/# CONFIG_DEBUG_INFO=y/CONFIG_DEBUG_INFO=n/g' .config
 
+# enable overlayfs for docker
+sed -i 's/# CONFIG_OVERLAY_FS is not set/CONFIG_OVERLAY_FS=y/g' .config
+
 # finally, build it
 make -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-reeps
 
